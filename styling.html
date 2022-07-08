@@ -3,61 +3,85 @@
 <head>
   <h1>LOGO</h1>
 <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
 
-li {
-  float: left;
-}
+	*{
+	font-family:arial;
+	}
+	
+	h2{
+	transition:0.15s;
+	}
+	
+	h2:hover{
+	text-decoration:underline;
+	cursor:pointer;
+	}
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
+	}
 
-li a:hover {
-  background-color: #111;
-}
-</style>
-</head>
-<body>
+	li {
+	  float: left;
+	}
 
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+	li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
 
-<style>
-div.gallery {
-  margin: 30px;
-  border: 5px solid #ccc;
-  float: left;
-  width: 550px;
-}
+	li a:hover {
+	  background-color: #111;
+	}
 
-div.gallery:hover {
-  border: 5px solid #777;
-}
+	div.gallery {
+	  margin: 30px;
+	  border: 5px solid #ccc;
+	  display:inline-block;
+	  width: 300px;
+	}
 
-div.gallery img {
-  width: 100%;
-  height: 70%;
-}
+	.gallery:hover {
+	  border: 5px solid #777;
+	  box-shadow:2px 2px 2px rgba(0,0,0,0.35);
+	}
 
-div.desc {
-  padding: 10px;
-  text-align: center;
-}
+	div.gallery img {
+	  width: 100%;
+	  height: 70%;
+	}
+	
+	.name{
+	font-size:18px;
+	padding-left:15px
+	padding-right:15px;
+	padding-bottom:5px;
+	padding-top:5px;
+	margin:5px;
+	}
+	
+	.price{
+	padding-left:15px
+	padding-right:15px;
+	padding-bottom:5px;
+	padding-top:5px;
+	font-size:24px;
+	margin:5px;
+	text-align:left;
+	}
+
+	div.desc {
+	  display:inline-block;
+	  float:left;
+	}
+
 </style>
   </style>
 </head>
@@ -65,6 +89,12 @@ div.desc {
 
 
 <body>
+	<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  </ul>
     <center>
        <h2>BEST SELLING</h2>
          <hr width="30%">
@@ -74,48 +104,87 @@ div.desc {
           <a target="_blank" href="https://images.unsplash.com/photo-1518082049942-62a4e31b18d3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60;">
             <img src="https://images.unsplash.com/photo-1518082049942-62a4e31b18d3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60;">
           </a>
-          <div class="desc">Product name & price</div>
+          <div class="desc">
+				<p class="name">Product name</p>
+				<p class="price">price</p>
+		  </div>
         </div>
 
         <div class="gallery">
           <a target="_blank" href="https://images.unsplash.com/photo-1518082049942-62a4e31b18d3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60;">
             <img src="https://images.unsplash.com/photo-1518082049942-62a4e31b18d3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
           </a>
-          <div class="desc">Product name & price</div>
+          <div class="desc">
+				<p class="name">Product name</p>
+				<p class="price">price</p>
+		  </div>
         </div>
 
         <div class="gallery">
           <a target="_blank" href="https://images.unsplash.com/photo-1518082049942-62a4e31b18d3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60;">
             <img src="https://images.unsplash.com/photo-1518082049942-62a4e31b18d3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60;">
           </a>
-          <div class="desc">Product name & price</div>
+          <div class="desc">
+				<p class="name">Product name</p>
+				<p class="price">price</p>
+		  </div>
         </div>
-
+		
+		<div class="gallery">
+          <a target="_blank" href="https://images.unsplash.com/photo-1518082049942-62a4e31b18d3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60;">
+            <img src="https://images.unsplash.com/photo-1518082049942-62a4e31b18d3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60;">
+          </a>
+          <div class="desc">
+				<p class="name">Product name</p>
+				<p class="price">price</p>
+		  </div>
+        </div>
+</center>
 
 <center>
        <h2>ALL TIME FAVOURITE</h2>
          <hr width="30%">
-    </center>
+</center>
+
 <center>
         <div class="gallery">
           <a target="_blank" href="https://images.unsplash.com/photo-1518082006182-e8d4c41a02e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60;">
             <img src="https://images.unsplash.com/photo-1518082006182-e8d4c41a02e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60;">
           </a>
-          <div class="desc">Product name & price</div>
+          <div class="desc">
+				<p class="name">Product name</p>
+				<p class="price">price</p>
+		  </div>
         </div>
 
         <div class="gallery">
           <a target="_blank" href="https://images.unsplash.com/photo-1518082006182-e8d4c41a02e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60;">
             <img src="https://images.unsplash.com/photo-1518082006182-e8d4c41a02e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
           </a>
-          <div class="desc">Product name & price</div>
+          <div class="desc">
+				<p class="name">Product name</p>
+				<p class="price">price</p>
+		  </div>
         </div>
 
         <div class="gallery">
           <a target="_blank" href="https://images.unsplash.com/photo-1518082006182-e8d4c41a02e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
             <img src="https://images.unsplash.com/photo-1518082006182-e8d4c41a02e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
           </a>
-          <div class="desc">Product name & price</div>
+         <div class="desc">
+				<p class="name">Product name</p>
+				<p class="price">price</p>
+		  </div>
+        </div>
+		
+		 <div class="gallery">
+          <a target="_blank" href="https://images.unsplash.com/photo-1518082006182-e8d4c41a02e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            <img src="https://images.unsplash.com/photo-1518082006182-e8d4c41a02e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fCUyM3N0YXRpb25hcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+          </a>
+          <div class="desc">
+				<p class="name">Product name</p>
+				<p class="price">price</p>
+		  </div>
         </div>
 
 <center>
@@ -127,23 +196,41 @@ div.desc {
           <a target="_blank" href="https://images.unsplash.com/photo-1518081896461-7cba17ff62d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
             <img src="https://images.unsplash.com/photo-1518081896461-7cba17ff62d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
           </a>
-          <div class="desc">Product name & price</div>
+          <div class="desc">
+				<p class="name">Product name</p>
+				<p class="price">price</p>
+		  </div>
         </div>
 
         <div class="gallery">
           <a target="_blank" href="https://images.unsplash.com/photo-1518081896461-7cba17ff62d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
             <img src="https://images.unsplash.com/photo-1518081896461-7cba17ff62d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
           </a>
-          <div class="desc">Product name & price</div>
+          <div class="desc">
+				<p class="name">Product name</p>
+				<p class="price">price</p>
+		  </div>
         </div>
 
         <div class="gallery">
           <a target="_blank" href="https://images.unsplash.com/photo-1518081896461-7cba17ff62d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
             <img src="https://images.unsplash.com/photo-1518081896461-7cba17ff62d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
           </a>
-          <div class="desc">Product name & price</div>
+          <div class="desc">
+				<p class="name">Product name</p>
+				<p class="price">price</p>
+		  </div>
         </div>
-
+		
+		<div class="gallery">
+          <a target="_blank" href="https://images.unsplash.com/photo-1518081896461-7cba17ff62d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+            <img src="https://images.unsplash.com/photo-1518081896461-7cba17ff62d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+          </a>
+          <div class="desc">
+				<p class="name">Product name</p>
+				<p class="price">price</p>
+		  </div>
+        </div>
 
 </body>
 
